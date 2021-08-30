@@ -1,5 +1,6 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import React from "react";
+import { ColorModeSwitch } from "../common/ColorModeSwitch";
 import { NavBar } from "./NavBar";
 
 interface Props {
@@ -10,7 +11,12 @@ const Layout: React.FC<Props> = ({ children }) => {
   return (
     <>
       <NavBar />
-      <Box maxW={"1920px"}>{children}</Box>
+      <Box px={"14px"} mx={"auto"} maxW={"1740px"}>
+        <Flex justify={"flex-end"}>
+          <ColorModeSwitch />
+        </Flex>
+        {children}
+      </Box>
     </>
   );
 };

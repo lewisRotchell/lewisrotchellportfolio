@@ -4,9 +4,5 @@ import { ColorModeSwitch } from "../components/common/ColorModeSwitch";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-  return (
-    <div>
-      <ColorModeSwitch />
-    </div>
-  );
+  return <div></div>;
 }
